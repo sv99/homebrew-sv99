@@ -8,7 +8,34 @@
 brew tap sv99/sv99
 ```
 
-## Formulas
+## Formula duplicate names
+
+If your tap contains a formula that is also present in master, that's fine,
+but it means that you must install it explicitly by default.
+
+If you would like to prioritize a tap over master, you can use
+`brew tap-pin sv99/sv99` to pin the tap,
+and use `brew tap-unpin sv99/sv99` to revert the pin.
+
+Whenever a `brew install foo` command is issued, brew will find which formula
+to use by searching in the following order:
+
+* Pinned taps
+* Core formulae
+* Other taps
+
+If you need a formula to be installed from a particular tap, you can use fully
+qualified names to refer to them.
+
+For example, you can create a tap for an alternative `vim` formula. Without
+pinning it, the behavior will be
+
+```bash
+brew install vim                     # installs from Homebrew/homebrew
+brew install username/repo/vim       # installs from your custom repo
+```
+
+## Formulae
 
 Kindlegen
 ```

@@ -6,6 +6,7 @@
 
 ```
 brew tap sv99/sv99
+brew untap sv99/sv99
 ```
 
 ## Formula duplicate names
@@ -35,16 +36,17 @@ brew install vim                     # installs from Homebrew/homebrew
 brew install username/repo/vim       # installs from your custom repo
 ```
 
-## Formulae
+## Formula
 
-Kindlegen
+apg - formula from [jzaleski/homebrew-jzaleski](https://github.com/jzaleski/homebrew-jzaleski)
 ```
-brew install kindlegen
+brew install apg
 ```
 
-zbar-dev
+## Contributing
 
-Development version zbar from github repo with additional patches.
-```
-brew install zbar-dev
-```
+See [CONTRIBUTING](CONTRIBUTING.md)
+
+## License
+
+See [LICENSE](LICENSE)

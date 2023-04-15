@@ -36,11 +36,20 @@ brew install vim                     # installs from Homebrew/homebrew
 brew install username/repo/vim       # installs from your custom repo
 ```
 
-## Formula
+## apg
 
 apg - formula from [jzaleski/homebrew-jzaleski](https://github.com/jzaleski/homebrew-jzaleski)
-```
+
+```bash
 brew install apg
+```
+
+## fb2converter
+
+[fb2converter](https://github.com/rupor-github/fb2converter) Unified converter of FB2 files into epub2, kepub, mobi and azw3 formats
+
+```bash
+brew install fb2converter
 ```
 
 ## Contributing

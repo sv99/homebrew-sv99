@@ -1,18 +1,20 @@
-class Apg < Formula
+class Fb2converter < Formula
+  # insltall binary fb2c and kindlegen
+  # for build from source need additional steps
   desc "Unified converter of FB2 files into epub2, kepub, mobi and azw3 formats"
   homepage "https://github.com/rupor-github/fb2converter"
-  url "https://github.com/rupor-github/fb2converter/archive/refs/tags/v1.70.0.tar.gz"
+  version "1.70.0"
+  url "https://github.com/rupor-github/fb2converter/releases/download/v1.70.0/fb2c_darwin_amd64.zip"
   license "GNU General Public License v3.0"
-  sha256 "3b0ece67d504bdf73736dea430223ce82aac813293cc91f905843b750b8a0fdd"
+  sha256 "d021f2304f3405a661117df70b88b73620ad3b4d127ecd010eedf4b188cf9549"
   head "https://github.com/rupor-github/fb2converter.git", branch: "master"
 
-  # depends_on "go" => :build
-
   def install
-    system "go", "run", "build.go"
- end
+    bin.install "fb2c", "kindlegen"
+  end
 
   test do
     system bin/"fb2c", "--version"
+    system bin/"kindlegen"
   end
 end

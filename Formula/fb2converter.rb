@@ -3,10 +3,10 @@ class Fb2converter < Formula
   # for build from source need additional steps
   desc "Unified converter of FB2 files into epub2, kepub, mobi and azw3 formats"
   homepage "https://github.com/rupor-github/fb2converter"
-  version "1.70.0"
-  url "https://github.com/rupor-github/fb2converter/releases/download/v1.70.0/fb2c_darwin_amd64.zip"
+  version "1.71.0"
+  url "https://github.com/rupor-github/fb2converter/releases/download/v1.71.0/fb2c_darwin_amd64.zip"
   license "GNU General Public License v3.0"
-  sha256 "d021f2304f3405a661117df70b88b73620ad3b4d127ecd010eedf4b188cf9549"
+  sha256 "9c65d6cad107cedacbbb41fb2fb948bf03cf4d85a43e95849a688c1029f1d97d"
   head "https://github.com/rupor-github/fb2converter.git", branch: "master"
 
   def install

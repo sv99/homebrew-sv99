@@ -52,6 +52,14 @@ brew install apg
 brew install fb2converter
 ```
 
+## html2md
+
+[html2md](https://github.com/suntong/html2md) Unified HTML to Markdown converter
+
+```bash
+brew install html2md
+```
+
 ## Contributing
 
 See [CONTRIBUTING](CONTRIBUTING.md)

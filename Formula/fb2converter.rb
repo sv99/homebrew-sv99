@@ -6,7 +6,7 @@ class Fb2converter < Formula
   version "1.77.2"
   url "https://github.com/rupor-github/fb2converter/releases/download/v#{version}/fb2c-darwin-amd64.zip"
   license "GNU General Public License v3.0"
-  sha256 "f27f957f52bb6e9453ee4f3c5ef0052e1cb7b9c8f12ca0723f9df90cafce49fe"
+  sha256 "5ba16d5a211bc4bdaa952cfddbcb1d2fad7f450f6b89f5dc8ceea640b4faa381"
   head "https://github.com/rupor-github/fb2converter.git", branch: "master"
 
   def install
